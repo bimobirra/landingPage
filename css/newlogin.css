@@ -21,6 +21,7 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #f1faff;
 }
 
 .login_side h2{
