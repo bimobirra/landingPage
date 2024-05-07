@@ -27,7 +27,7 @@ html{
 }
 
 .smaller-picture{
-    width: 400px;
+    width: 600px;
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -194,7 +194,7 @@ html{
 }
 
 .custom_width{
-    width: 50%;
+    width: 76%;
 }
     
 .flexie{
@@ -204,11 +204,28 @@ html{
     flex-direction: column;
 }
 
+.flexie1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexie2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .embedmap{
     margin-top: 30px;
     width: 400px;
 }
 
+.text-font{
+    font-size: 20px;
+}
 
 @media only screen and (max-width:767px) {
 
@@ -280,7 +297,7 @@ html{
     }
     
     .wrapper-content{
-        height: 65vh;
+        height: 95vh;
     }
 
     .row{
@@ -298,6 +315,20 @@ html{
         flex-direction: column;
     }
 
+    .flexie2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .flexie{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .embedmap{
         margin-top: 10px;
         width: 100px;
@@ -305,5 +336,13 @@ html{
 
     .footer-height{
         height: 70vh;
+    }
+
+    .margin_h2_top{
+        margin-top: 275px;
+    }
+
+    .text-font{
+        font-size: 1rem;
     }
 }
