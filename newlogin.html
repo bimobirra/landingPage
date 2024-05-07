@@ -28,13 +28,35 @@
     <!-- Import Google Font End -->
   </head>
   <body>
+    
     <div class="row d-flex">
-      <div class="col login_side">testestestes</div>
+      <div class="col login_side">
+
+        <h2>Login</h2>
+
+        <form onsubmit="return validateForm()">
+        
+            <label for="name" class="name">Username:</label><br>
+            <input type="text" id="name" name="name" class="nameInput" placeholder="Username"><br><br>
+            <div id="errorName"></div>
+
+            <label for="password" class="password">Password:</label><br>
+            <input type="password" id="password" name="password" class="passwordInput" placeholder="Password"><br><br>
+            <div id="errorPassword"></div>
+
+            <button onclick="submit" class="submit-btn">Login</button>
+
+        </form>
+
+      </div>
       <div class="col image_side">
+
         <div class="background-image">
-            <h1>REFAL <br> SHAREHOUSE
-            </h1>
+
         </div>
+        <div class="d-flex align-items-end justify-content-center flex-column hero">
+            <h1>REFAL <br> SHAREHOUSE
+            </h1></div>
       </div>
     </div>
 
@@ -47,7 +69,7 @@
 
     <!-- Form Validation -->
     <!-- Form Validation End-->
-
+    <script src="js/validateForm.js"></script>
     <!-- Import Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -15,13 +16,76 @@ html{
 
 .login_side{
     height: 100vh;
-    border: 1px solid black;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login_side h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.nameInput{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    padding: 25px 10px;
+    border-radius: 8px;
+}
+
+#errorName{
+    margin: 0;
+    color: red;
+}
+
+#errorPassword{
+    margin: 0;
+    color: red;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.password {
+    font-size: 20px;
+}
+
+.passwordInput{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    padding: 25px 10px;
+    border-radius: 8px;
+}
+
+.submit-btn{
+    width: 300px;
+    height: 40px;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-btn-lgn);
+    border-radius: 8px;
+    color: var(--color-link);
+    border-color: var(--color-link);
+    transition: all 0.5s;
+}
+
+.submit-btn:hover{
+    background: var(--color-link);
+    color: var(--color-btn-lgn);
+    border-color: var(--color-link);
 }
 
 .image_side{
     height: 100vh;
-    border: 1px solid black;
     width: 50%;
 }
 
@@ -38,9 +102,16 @@ html{
     align-items: center;
     justify-content: flex-end;
     opacity: 0.4;
+    position: absolute;
+    z-index: -1111111111;
+    width: 49.8%;
 }
 
-.background-image h1{
+.hero{
+    height: 100vh;
+}
+
+.hero h1{    
     font-family: 'Lora', serif;
     font-size: 90px;
     text-align: right;
@@ -51,4 +122,16 @@ html{
 
 .row{
     --bs-gutter-x: 0;
+}
+
+
+
+@media only screen and (max-width:1100px){
+
+    .image_side{
+        display: none;
+    }
+
+
+    
 }
