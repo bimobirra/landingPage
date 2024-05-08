@@ -55,6 +55,90 @@ html{
     width: 100px;
 }
 
+.map-side{
+    height: 100vh;
+}
+
+.contact-side{
+    height: 100vh;
+}
+
+iframe{
+    border-radius: 6px;
+}
+
+.link{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.whatsapp{
+    width: 250px;
+    height: 60px;
+    padding: 10px 25px;
+    border: 1px solid 	#25d366;
+    border-radius: 8px;
+    background: #dcf8c6;
+    color: 	#25d366;
+    transition: all 0.5s;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp:hover{
+    border-color: #dcf8c6;
+    background: #25d366;
+    color: #dcf8c6;
+}
+
+.fa-2x{
+    margin-left: 20px;
+}
+
+.phone{
+    width: 250px;
+    height: 60px;
+    padding: 10px 25px;
+    border: 1px solid 	#5AB2FF;
+    border-radius: 8px;
+    background: #EEF7FF;
+    color: 	#5AB2FF;
+    transition: all 0.5s;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone:hover{
+    border-color: #EEF7FF;
+    background: #5AB2FF;
+    color: #EEF7FF;
+}
+
+.email{
+    width: 250px;
+    height: 60px;
+    padding: 10px 25px;
+    border: 1px solid 	#ff5d5d;
+    border-radius: 8px;
+    background: #ece9e9;
+    color: 	#ff5d5d;
+    transition: all 0.5s;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email:hover{
+    border-color: #ece9e9;
+    background: #ff5d5d;
+    color: #ece9e9;
+}
+
 .menjauh-sikit{
     margin-left: 50px;
 }
@@ -65,6 +149,11 @@ html{
 
 .footer-height{
     height: 30vh;
+}
+
+.embedmap{
+    width: 600px;
+    height: 500px;
 }
 
 .footer_header{
@@ -108,6 +197,11 @@ html{
 }
 
 @media only screen and (max-width:767px) {
+
+    .title{
+        margin-top: 20px;
+    }
+
     .menjauh-sikit{
         margin-left: 63px;
         margin-top: 12px;
@@ -121,6 +215,11 @@ html{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .embedmap{
+        width: 300px;
+        height: 200px;
     }
 
     .flexie2{
