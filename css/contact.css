@@ -153,7 +153,12 @@ iframe{
 
 .embedmap{
     width: 600px;
+    margin-top: 30px;
+}
+
+.mapping{
     height: 500px;
+    width: 700px;
 }
 
 .footer_header{
@@ -187,7 +192,7 @@ iframe{
 }
 
 .embedmap{
-    margin-top: 30px;
+    
     width: 400px;
 }
 
@@ -238,15 +243,29 @@ iframe{
 
     .embedmap{
         margin-top: 10px;
-        width: 100px;
+        width: 300px;
     }
 
     .footer-height{
         height: 55vh;
     }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-side h1{
+        margin-top: 150px;
+    }
+
+    .mapping{
+        height: 250px;
+        width: 250px;
+    }
 }
 
-@media only screen and (min-width:767px) and (max-width:820px) {
+@media only screen and (min-width:767px) and (max-width:1180px) {
     .flexie1{
         display: flex;
         align-items: center;
@@ -275,5 +294,10 @@ iframe{
 
     .footer-height{
         height: 25vh;
+    }
+
+    .mapping{
+        height: 250px;
+        width: 250px;
     }
 }

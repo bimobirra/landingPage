@@ -14,6 +14,10 @@
     />
     <!-- Import Bootstrap End -->
 
+    <!-- import aos -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- import aos end -->
+
     <!-- Import CSS -->
     <link rel="stylesheet" href="css/newlogin.css" />
     <!-- Import CSS End -->
@@ -28,23 +32,77 @@
     <!-- Import Google Font End -->
   </head>
   <body>
+
+     <!--Navbar-->
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img class="smaller-logo" src="img/img1white.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav ms-auto fw-700 d-flex justify-content-center align-items-center"
+          >
+            <li
+              class="nav-item d-flex justify-content-center align-items-center"
+            >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li
+              class="nav-item d-flex justify-content-center align-items-center"
+            >
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li
+              class="nav-item d-flex justify-content-center align-items-center"
+            >
+              <a class="nav-link" href="facilities.html">Facilities</a>
+            </li>
+            <li
+              class="nav-item d-flex justify-content-center align-items-center"
+            >
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li
+              class="nav-item d-flex justify-content-center align-items-center menjauh-sikit"
+            >
+              <a class="nav-link lgn_btn w-100 p-4" href="newlogin.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar End-->
     
     <div class="row d-flex">
       <div class="col login_side">
 
-        <h2>Login</h2>
+        <h2 data-aos="fade-up" data-aos-delay="300">Login</h2>
 
         <form onsubmit="return validateForm()">
         
-            <label for="name" class="name">Username:</label><br>
-            <input type="text" id="name" name="name" class="nameInput" placeholder="Username"><br><br>
+            <label for="name" class="name" data-aos="fade-up" data-aos-delay="600">Username:</label><br>
+            <input type="text" id="name" name="name" class="nameInput" placeholder="Username" data-aos="fade-up" data-aos-delay="600"><br><br>
             <div id="errorName"></div>
 
-            <label for="password" class="password">Password:</label><br>
-            <input type="password" id="password" name="password" class="passwordInput" placeholder="Password"><br><br>
+            <label for="password" class="password" data-aos="fade-up" data-aos-delay="900">Password:</label><br>
+            <input type="password" id="password" name="password" class="passwordInput" placeholder="Password" data-aos="fade-up" data-aos-delay="900"><br><br>
             <div id="errorPassword"></div>
 
-            <button onclick="submit" class="submit-btn">Login</button>
+            <button onclick="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="1200">Login</button>
 
         </form>
 
@@ -77,5 +135,13 @@
       crossorigin="anonymous"
     ></script>
     <!-- Import Bootstrap End -->
+
+    <!-- import aos -->
+    <script src="js/aos.js"></script>
+    <!-- import aos end -->
+
+    <!-- innit aos -->
+    <script src="js/innit-aos.js"></script>
+    <!-- innit aos end -->
   </body>
 </html>
