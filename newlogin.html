@@ -95,14 +95,16 @@
         <form onsubmit="return validateForm()">
         
             <label for="name" class="name" data-aos="fade-up" data-aos-delay="600">Username:</label><br>
-            <input type="text" id="name" name="name" class="nameInput" placeholder="Username" data-aos="fade-up" data-aos-delay="600"><br><br>
+            <input type="text" id="name" name="name" class="form-control p-3 border-secondary" placeholder="Username" data-aos="fade-up" data-aos-delay="600"><br><br>
             <div id="errorName"></div>
 
             <label for="password" class="password" data-aos="fade-up" data-aos-delay="900">Password:</label><br>
-            <input type="password" id="password" name="password" class="passwordInput" placeholder="Password" data-aos="fade-up" data-aos-delay="900"><br><br>
+            <input type="password" id="password" name="password" class="form-control p-3 border-secondary m-0" placeholder="Password" data-aos="fade-up" data-aos-delay="900"><br><br>
             <div id="errorPassword"></div>
 
-            <button onclick="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="1200">Login</button>
+            <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="1200">Login</button>
+
+            <div data-aos="fade-up" data-aos-delay="1200" id="emailHelp" class="form-text mt-3">don't have an account? <a href="register.html">register here</a></div>
 
         </form>
 
