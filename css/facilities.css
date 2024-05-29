@@ -126,6 +126,19 @@ html{
     align-items: flex-start;
     justify-content: center;
 }
+
+.carousel{
+    height: 50%;
+    width: 75%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.carousel img{
+    border-radius: 10px;
+}
+
 @media only screen and (max-width:767px) {
     .menjauh-sikit{
         margin-left: 63px;
@@ -167,6 +180,14 @@ html{
     .full-height{
         height: 270vh;
     }
+
+    .carousel{
+        height: 75%;
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
 }
 
 @media only screen and (min-width:767px) and (max-width:820px) {
